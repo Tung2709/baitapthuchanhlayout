@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import BaiTapThucHanhLayoutLayout from './BaiTapLayoutComponent/BaiTapThucHanhLayoutLayout';
+import Body from './BaiTapLayoutComponent/Body';
+import Footer from './BaiTapLayoutComponent/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div className='layout'>
+  <BaiTapThucHanhLayoutLayout/>
+  <Body/>
+  <Footer/>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
